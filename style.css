@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-caminho: rgb(189, 243, 118);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, pink, rgb(152, 152, 255));
+    height: 100vh;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: var(--cor-caminho);
+}
+
+.cell {
+    background-color: var(--cor-caminho);
+    width: 40px;
+    height: 40px;
+}
+
+.playerCell {
+    background-image: url(img/princesa.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.caminho {
+    background-color: var(--cor-caminho);
+    width: 40px;
+    height: 40px;
+}
+
+.wall {
+    background-image: url(img/arvore4.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+.vitoria {
+    background-image: url(img/café5.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+#result {
+    font-size: 2.4em;
+    color: rgb(34, 34, 34);
+    text-shadow: 1px 1px 1px rgb(248, 248, 248);
+}
